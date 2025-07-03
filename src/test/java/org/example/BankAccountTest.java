@@ -41,8 +41,7 @@ public class BankAccountTest {
         assertFalse(depositSuccess);
         assertEquals(100, account.getAccountBalance(), 0.001);
     }
-
-
+    
     @Test
     public void testWithdrawValidAmount() {
         // should be equal to balance-withdrawal amount and return true

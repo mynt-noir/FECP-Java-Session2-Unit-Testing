@@ -52,6 +52,7 @@ public class BankAccount {
             System.out.println("Invalid deposit. Please deposit a non-negative amount.");
             return false;
         }
+
         accountBalance += depositAmount;
         System.out.printf("Deposited %.2f successfully! Your new balance is %.2f.\n", depositAmount, accountBalance);
         return true;
@@ -62,6 +63,7 @@ public class BankAccount {
             System.out.println("Invalid withdrawal. Please deposit a non-negative amount less than or equal to your balance.");
             return false;
         }
+
         accountBalance -= withdrawAmount;
         System.out.printf("Withdrawn %.2f successfully! Your new balance is %.2f.\n", withdrawAmount, accountBalance);
         return true;
